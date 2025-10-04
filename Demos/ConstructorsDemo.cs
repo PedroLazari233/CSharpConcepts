@@ -52,11 +52,11 @@ namespace ConstructorsExamples.Demos
         private static void CopyConstructor()
         {
             Console.WriteLine("=== COPY CONSTRUCTOR ===");
-            var original = new Person_CopyConstructor("Diana", 28);
+            var original = new Person_CopyConstructor("Diana", 28, ["fishing", "gaming"]);
             var copy = new Person_CopyConstructor(original);
 
-            Console.WriteLine($"Original -> Name: {original.Name}, Age: {original.Age}");
-            Console.WriteLine($"Copy     -> Name: {copy.Name}, Age: {copy.Age}\n");
+            Console.WriteLine($"Original -> Name: {original.Name}, Age: {original.Age}, Hobbies: {original.Hobbies[0]}, {original.Hobbies[1]}");
+            Console.WriteLine($"Copy     -> Name: {copy.Name}, Age: {copy.Age}, Hobbies: {copy.Hobbies[0]}, {copy.Hobbies[1]}\n");
         }
 
         private static void PrivateConstructor()
