@@ -19,9 +19,6 @@ public class Person_CopyConstructor
     ///   - Value types (int, double, etc.) and immutable types (string) are copied by value.
     ///   - Reference types (like lists or other objects) are copied by reference, meaning both objects share the same instance.
     /// - To avoid unexpected side effects, you may need to implement a **deep copy** by creating new instances for reference-type fields.
-    /// 
-    /// Reference for further reading: 
-    /// https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/copy-constructors
     /// </summary>
     /// <param name="original">The object to copy.</param>
     public Person_CopyConstructor(Person_CopyConstructor original)
